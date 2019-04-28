@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.body{
+    display:flex;
+    text-align: center;
+}
+
+.dark{
+    width: 33%;
+    background-color: black;
+    height: 185px;
+}
+
+.light{
+    width: 33%;
+    height: 185px;
+}
+
+.colorful{
+    width: 33%;
+    height: 185px;
+    background-color: #339398
+}
+
+* :focus{
+    outline: none;
+}
+
+#btn1, #btn2, #btn3{
+    width: 120px;
+    height: 40px;
+    position: relative;
+    font-size: 24px;
+    top: 40px;
+}
+
+#btn1{
+    background-color: transparent;
+    border: 3px solid limegreen;
+    border-radius: 5px;
+    color: limegreen;
+}
+
+#btn1:hover{
+    background-color: #011101;
+    filter: brightness(2);
+    filter: blur(100);
+    box-shadow: 2px 1px 10px lime;
+    transition-duration: 0.7s;
+}
+
+#btn2{
+  border: none;
+  background-color: darkblue;
+  border-radius:5px;
+  color: white;
+  border-bottom: 4px solid black;
+  border-right: 2px solid black;
+}
+
+#btn2:hover{
+    transform: scale(1.1);
+}
+
+#btn2:active{
+  border-bottom: 2px solid black;
+  border-right: 1px solid black;
+}
+
+#btn3{
+   background-color: transparent;
+   border: 2px solid #971187;
+   color: #971187;
+   border-radius: 2px;
+}
+
+#btn3:hover{
+  background-color: #971187;
+  color: white;
+  transition-duration: 0.2s;
+}
+
+#btn3:active{
+  transform: scale(0.91);
+}
+
+#text1, #text2, #text3{
+    position: relative;
+    top: 55%;
+    right: 28%;
+}
+
+#text1{
+  background-color: transparent;
+  padding: 7px;
+  color: limegreen;
+  border: 3px solid limegreen;
+  border-radius:5px;
+}
+
+#text1::placeholder{
+  color: limegreen;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#text1:focus{
+  background-color: #011101;
+    filter: brightness(2);
+    filter: blur(100);
+    box-shadow: 2px 1px 10px lime;
+    transition-duration: 0.7s;
+}
+
+#text2{
+  border: 1px solid black;
+  background-color: darkblue;
+  padding: 7px;
+  border-radius: 5px;
+  border-bottom: 4px solid black;
+  border-right: 2px solid black;
+  color: white;
+}
+
+#text2::placeholder{
+  color: white;
+}
+
+#text2:focus{
+  transform: scale(1.1);
+}
+
+#text3{
+  border: 2px solid #971187;
+  padding: 5px;
+  color: #971187;
+  
+}
+
+#text3::placeholder{
+  color: #971187
+}
